@@ -1,0 +1,20 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm install)",
+      "Bash(npm start)",
+      "WebFetch(domain:starwars-visualguide.com)",
+      "WebSearch",
+      "WebFetch(domain:github.com)",
+      "Bash(npm install:*)",
+      "Bash(npm test)",
+      "Bash(npx jest:*)",
+      "Bash(test:*)",
+      "Bash(npm run test:cucumber:*)",
+      "Bash(git init:*)",
+      "Bash(git add:*)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}

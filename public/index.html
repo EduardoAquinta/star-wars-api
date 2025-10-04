@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Star Wars API Explorer</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1 id="home-link">Star Wars API Explorer</h1>
+      <p class="subtitle">Explore the Star Wars Universe</p>
+    </header>
+
+    <!-- Landing Screen - Category Selection -->
+    <div id="landing-screen" class="screen active">
+      <div class="categories">
+        <div class="category-card" data-category="people">
+          <h2>People</h2>
+          <p>Explore characters from the Star Wars universe</p>
+        </div>
+        <div class="category-card" data-category="films">
+          <h2>Films</h2>
+          <p>Browse all Star Wars movies</p>
+        </div>
+        <div class="category-card" data-category="planets">
+          <h2>Planets</h2>
+          <p>Discover planets across the galaxy</p>
+        </div>
+        <div class="category-card" data-category="species">
+          <h2>Species</h2>
+          <p>Learn about different species</p>
+        </div>
+        <div class="category-card" data-category="starships">
+          <h2>Starships</h2>
+          <p>View iconic starships</p>
+        </div>
+        <div class="category-card" data-category="vehicles">
+          <h2>Vehicles</h2>
+          <p>Explore various vehicles</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- List Screen - Show all items in a category -->
+    <div id="list-screen" class="screen">
+      <button id="back-to-categories" class="back-btn">← Back to Categories</button>
+      <h2 id="list-title"></h2>
+      <div id="items-list" class="items-grid"></div>
+      <div class="pagination">
+        <button id="prev-page" class="page-btn">Previous</button>
+        <span id="page-info"></span>
+        <button id="next-page" class="page-btn">Next</button>
+      </div>
+    </div>
+
+    <!-- Detail Screen - Show specific item details -->
+    <div id="detail-screen" class="screen">
+      <button id="back-to-list" class="back-btn">← Back to List</button>
+      <div id="detail-wrapper">
+        <div id="detail-content"></div>
+        <div id="detail-image"></div>
+      </div>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
