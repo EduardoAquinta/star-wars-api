@@ -12,7 +12,11 @@
       "Bash(test:*)",
       "Bash(npm run test:cucumber:*)",
       "Bash(git init:*)",
-      "Bash(git add:*)"
+      "Bash(git add:*)",
+      "Bash(git commit -m \"$(cat <<''EOF''\nInitial commit: Star Wars API Explorer\n\nFeatures:\n- Full-stack web application using Express and vanilla JavaScript\n- Integration with SWAPI (Star Wars API)\n- Responsive UI with category browsing, list views, and detail pages\n- Image integration from alternative API sources\n- Backend unit tests with Jest (92% coverage)\n- Frontend E2E tests with Cucumber (11 scenarios, 55 steps)\n- AWS EC2 deployment infrastructure with Terraform\n- GitHub Actions CI/CD pipeline\n- Support for both local and cloud deployment\n\nTech Stack:\n- Backend: Node.js, Express\n- Frontend: Vanilla JavaScript, HTML5, CSS3\n- Testing: Jest, Cucumber, Puppeteer\n- Infrastructure: Terraform, AWS EC2\n- CI/CD: GitHub Actions\n\n🤖 Generated with Claude Code\nEOF\n)\")",
+      "Bash(git commit:*)",
+      "Bash(git remote add:*)",
+      "Bash(git push:*)"
     ],
     "deny": [],
     "ask": []
